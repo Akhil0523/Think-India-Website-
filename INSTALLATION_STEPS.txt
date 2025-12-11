@@ -1,0 +1,56 @@
+═══════════════════════════════════════════════════════════════
+  INSTALLATION STEPS FOR THINK INDIA MNNIT WEBSITE
+═══════════════════════════════════════════════════════════════
+
+STEP 1: INSTALL NODE.JS
+───────────────────────────────────────────────────────────────
+  Node.js is required to run this website.
+
+  → Go to: https://nodejs.org/
+  → Download the LTS (Long Term Support) version
+  → Run the installer
+  → IMPORTANT: Check "Add to PATH" during installation
+  → Restart your terminal/PowerShell after installation
+
+  Verify installation:
+    node --version
+    npm --version
+
+
+STEP 2: INSTALL PROJECT DEPENDENCIES
+───────────────────────────────────────────────────────────────
+  After Node.js is installed, run:
+
+    npm run install-all
+
+  This will install all required packages for both frontend and backend.
+
+
+STEP 3: ADD YOUR LOGO
+───────────────────────────────────────────────────────────────
+  Place your Think India MNNIT logo as:
+    frontend/public/demo-logo.png
+
+
+STEP 4: START THE SERVER
+───────────────────────────────────────────────────────────────
+  Run:
+
+    npm run dev
+
+  This starts:
+    • Backend server on: http://localhost:5000
+    • Frontend website on: http://localhost:3000
+
+
+STEP 5: ADD IMAGES (Optional)
+───────────────────────────────────────────────────────────────
+  See IMAGE_PLACEHOLDERS.md for a complete list of images needed.
+  Add images to the respective folders in frontend/public/
+
+
+═══════════════════════════════════════════════════════════════
+  CURRENT STATUS: Waiting for Node.js installation
+═══════════════════════════════════════════════════════════════
+
+

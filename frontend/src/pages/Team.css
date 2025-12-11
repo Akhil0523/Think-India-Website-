@@ -1,0 +1,140 @@
+.team-page {
+  padding-top: 20px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.team-card {
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-image {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: var(--light-saffron);
+  position: relative;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-image img {
+  transform: scale(1.1);
+}
+
+.team-info {
+  padding: 25px 20px;
+}
+
+.team-info h3 {
+  color: var(--dark-green);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.team-position {
+  color: var(--saffron);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.team-contact {
+  color: #666;
+  font-size: 0.9rem;
+  word-break: break-word;
+}
+
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faculty-card {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  text-align: left;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.faculty-card:hover {
+  transform: translateX(10px);
+}
+
+.faculty-image {
+  min-width: 150px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--saffron);
+  background: var(--light-saffron);
+}
+
+.faculty-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.faculty-info h3 {
+  color: var(--dark-green);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.faculty-position {
+  color: var(--saffron);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.faculty-contact {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .faculty-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .faculty-image {
+    min-width: 120px;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
